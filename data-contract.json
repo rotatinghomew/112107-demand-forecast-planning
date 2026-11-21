@@ -1,0 +1,54 @@
+{
+  "project": "社区服务需求与供给计划资料",
+  "data_is_synthetic": true,
+  "encoding": "UTF-8",
+  "files": {
+    "requests.csv": {
+      "columns": [
+        "request_id",
+        "street_id",
+        "service_type",
+        "period",
+        "eligibility",
+        "status",
+        "reason"
+      ],
+      "row_count": 5
+    },
+    "service_history.csv": {
+      "columns": [
+        "event_id",
+        "request_id",
+        "served_at",
+        "provider_id",
+        "quantity",
+        "revision"
+      ],
+      "row_count": 3
+    },
+    "capacity.csv": {
+      "columns": [
+        "provider_id",
+        "street_id",
+        "service_type",
+        "period",
+        "slots",
+        "credential_state",
+        "revision"
+      ],
+      "row_count": 3
+    },
+    "plans.csv": {
+      "columns": [
+        "plan_id",
+        "created_at",
+        "street_id",
+        "service_type",
+        "period",
+        "expected_slots",
+        "status"
+      ],
+      "row_count": 2
+    }
+  }
+}

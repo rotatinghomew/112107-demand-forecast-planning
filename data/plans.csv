@@ -1,0 +1,3 @@
+plan_id,created_at,street_id,service_type,period,expected_slots,status
+P91,2026-03-20,Z1,bathing,2026-Q2,2,confirmed
+P92,2026-03-20,Z2,escort,2026-Q2,3,draft
