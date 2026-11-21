@@ -1,52 +1,88 @@
 {
-  "project": "社区服务需求与供给计划资料",
   "data_is_synthetic": true,
-  "encoding": "UTF-8",
+  "timezone": "Asia/Shanghai",
   "files": {
-    "requests.csv": {
+    "accounts.csv": {
       "columns": [
-        "request_id",
-        "street_id",
-        "service_type",
-        "period",
-        "eligibility",
-        "status",
+        "event",
+        "case",
+        "station",
+        "effective",
+        "known_at",
+        "kind",
+        "frequency",
+        "minutes",
+        "reserved_shift",
         "reason"
       ],
-      "row_count": 5
+      "row_count": 6
     },
-    "service_history.csv": {
+    "shift_calendar.csv": {
       "columns": [
-        "event_id",
-        "request_id",
-        "served_at",
-        "provider_id",
-        "quantity",
-        "revision"
+        "shift",
+        "station",
+        "week",
+        "available_minutes",
+        "has_fixed",
+        "recorded_at"
       ],
-      "row_count": 3
+      "row_count": 11
     },
-    "capacity.csv": {
+    "flex_agreements.csv": {
       "columns": [
-        "provider_id",
-        "street_id",
-        "service_type",
-        "period",
-        "slots",
-        "credential_state",
-        "revision"
+        "document",
+        "case",
+        "from",
+        "weeks",
+        "weekly_minutes",
+        "borrowed_shift",
+        "substitute",
+        "signed_at"
       ],
-      "row_count": 3
+      "row_count": 1
     },
-    "plans.csv": {
+    "offers.csv": {
       "columns": [
-        "plan_id",
-        "created_at",
-        "street_id",
-        "service_type",
-        "period",
-        "expected_slots",
-        "status"
+        "offer",
+        "station",
+        "from",
+        "weeks",
+        "weekly_minutes",
+        "expense_cents",
+        "expires_at"
+      ],
+      "row_count": 2
+    },
+    "planning_policy.csv": {
+      "columns": [
+        "station",
+        "min_cohorts",
+        "min_outcome_weeks",
+        "min_interval_coverage",
+        "max_unfunded_risk",
+        "max_cost_cents"
+      ],
+      "row_count": 1
+    },
+    "past_events.csv": {
+      "columns": [
+        "event",
+        "case",
+        "station",
+        "effective",
+        "known_at",
+        "kind",
+        "frequency",
+        "minutes",
+        "reason"
+      ],
+      "row_count": 805
+    },
+    "history_cutoffs.csv": {
+      "columns": [
+        "station",
+        "observed_through",
+        "recorded_at"
       ],
       "row_count": 2
     }

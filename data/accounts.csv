@@ -1,0 +1,7 @@
+event,case,station,effective,known_at,kind,frequency,minutes,reserved_shift,reason
+E1,H1,山前,2026-04-06,2026-04-03,start,2,60,K1,fixed
+E2,H2,山前,2026-04-13,2026-04-11,start,2,45,K2,fixed
+E3,H1,山前,2026-05-04,2026-05-01,pause,2,60,K1,return_right
+E4,H2,山前,2026-06-01,2026-05-23,due_renewal,2,45,K2,pending
+E5,H1,山前,2026-05-25,2026-05-22,resume,2,60,K1,return_right
+E6,H2,山前,2026-06-01,2026-06-07,renew,2,45,K2,accepted

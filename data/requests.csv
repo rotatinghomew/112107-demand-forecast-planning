@@ -1,6 +1,0 @@
-request_id,street_id,service_type,period,eligibility,status,reason
-R91,Z1,bathing,2025-Q4,confirmed,completed,
-R92,Z1,bathing,2025-Q4,confirmed,unfilled,no_staff
-R93,Z1,bathing,2026-Q1,pending,pending_review,
-R94,Z2,escort,2026-Q1,confirmed,cancelled,household
-R95,Z2,escort,2026-Q1,confirmed,completed,
